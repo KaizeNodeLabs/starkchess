@@ -3,7 +3,8 @@ pub mod systems {
 }
 
 pub mod models {
-    pub mod models;
+    pub mod chess;
+    pub mod player;
 }
 
 pub mod tests {
