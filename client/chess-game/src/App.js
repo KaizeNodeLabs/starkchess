@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+"use client"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./styles.css"
+import Navbar from "./components/navbar.tsx"
+import HeroSection from "./components/hero-section.tsx"
+import LogoRow from "./components/logo-row.tsx"
+import Leaderboard from "./components/learderboard.tsx"
+import HowToPlay from "./components/how-to-play.tsx"
+import SocialMedia from "./components/social-media.tsx"
+import Footer from "./components/footer.tsx"
 
-function App() {
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="landing-page">
+      <Navbar />
+      <HeroSection />
+      <LogoRow />
+      <Leaderboard />
+      <HowToPlay />
+      <SocialMedia />
+      <Footer />
     </div>
-  );
+  )
 }
-
-export default App;

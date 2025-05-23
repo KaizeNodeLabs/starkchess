@@ -1,0 +1,251 @@
+/* Global Styles */
+:root {
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --danger-color: #ff3366;
+  --dark-bg: #121212;
+  --darker-bg: #0a0a0a;
+  --light-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --text-muted: #a0a0a0;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+.landing-page {
+  background-color: var(--dark-bg);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #5649c0;
+  border-color: #5649c0;
+}
+
+.connect-wallet-btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Logo Styles */
+.logo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.logo-dot:nth-child(3) {
+  background-color: var(--danger-color);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--darker-bg);
+}
+
+/* Hero Section Styles */
+.hero-section {
+  padding: 5rem 0;
+  background-color: var(--darker-bg);
+}
+
+.hero-section h1 {
+  font-weight: 800;
+}
+
+.hero-section .text-primary {
+  color: var(--primary-color) !important;
+}
+
+.hero-section .text-danger {
+  color: var(--danger-color) !important;
+}
+
+.checkerboard-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Logo Row Styles */
+.logo-row {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.logo-row .text-secondary {
+  color: #333 !important;
+}
+
+/* Leaderboard Styles */
+.leaderboard-section {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 4rem 0;
+}
+
+.leaderboard-table-container {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table {
+  margin-bottom: 0;
+}
+
+.leaderboard-table th {
+  font-weight: 600;
+  color: #666;
+  border-top: none;
+  padding: 1rem;
+}
+
+.leaderboard-table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.rank-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.rank-1 {
+  background-color: gold;
+  color: #333;
+}
+
+.rank-2 {
+  background-color: silver;
+  color: #333;
+}
+
+.rank-3 {
+  background-color: #cd7f32; /* bronze */
+  color: white;
+}
+
+.rank-4,
+.rank-5 {
+  background-color: #6c757d;
+  color: white;
+}
+
+.avatar-placeholder {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+}
+
+.see-more-btn {
+  margin-top: 2rem;
+}
+
+/* How to Play Styles */
+.how-to-play-section {
+  background-color: var(--darker-bg);
+  padding: 4rem 0;
+}
+
+.game-pieces-image {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Social Media Styles */
+.social-media-section {
+  background-color: var(--dark-bg);
+  padding: 4rem 0;
+}
+
+.social-media-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.social-media-container h2 {
+  background: linear-gradient(90deg, var(--primary-color), var(--danger-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--darker-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer a {
+  color: var(--text-muted);
+}
+
+.footer a:hover {
+  color: var(--text-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .checkerboard-container {
+    margin-top: 2rem;
+  }
+}
